@@ -111,3 +111,6 @@ alias rm='rm -v'
 # Zsh alias
 alias zshconfig='vim ~/dotfiles/.zshrc'
 alias zshsource='source ~/dotfiles/.zshrc'
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
