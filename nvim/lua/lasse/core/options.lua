@@ -6,6 +6,8 @@ opt.relativenumber = true
 opt.number = true
 opt.expandtab = true
 opt.autoindent = true
+opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
+opt.tabstop = 2 -- insert 2 spaces for a tab
 
 opt.ignorecase = true -- Ignore case when searching
 opt.smartcase = true -- If mixed case is included, be sensitive
