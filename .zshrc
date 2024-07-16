@@ -107,6 +107,7 @@ alias gits='git status'
 # Shell command alias
 alias mv='mv -v'
 alias rm='rm -v'
+alias n='nvim'
 
 # Zsh alias
 alias zshconfig='vim ~/dotfiles/.zshrc'
