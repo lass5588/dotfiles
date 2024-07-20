@@ -22,7 +22,7 @@ return {
       dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
       dashboard.button("f", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
       dashboard.button("s", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
-      --dashboard.button("SPC ff", "  > Recent Files", "<cmd>Telescope find_files<CR>"),
+      dashboard.button("p", "  > Recent Files", "<cmd>Telescope projects<CR>"),
       dashboard.button("e", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
       dashboard.button("r", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
       dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
