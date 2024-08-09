@@ -41,8 +41,4 @@ keymap("x", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("x", "K", ":m '<-2<CR>gv=gv", opts)
 keymap("x", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
-
--- Keymaps for buffer 
-keymap("n", "bb", ":bp<cr>", { desc = "Find files in cwd" })
-keymap("n", "bn", ":bn<cr>", { desc = "Find recent files" })
- 
+--
