@@ -24,6 +24,7 @@ return {
     wk.add({
       -- Others
       { "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<cr>" , desc = "Comment Linewise" },
+      { "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>" , desc = "Comment Linewise", mode = "v" },
       { "<leader>f", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
       -- Buffer
       { "<leader>b", group = "Buffer" },
@@ -37,6 +38,30 @@ return {
       { "<leader>sc", "<cmd>Telescope grep_string<cr>", desc = "Find string under cursor in cwd" },
       { "<leader>st", "<cmd>TodoTelescope<cr>", desc = "Find Todos" },
       { "<leader>sp", "<cmd>Telescope projects<cr>", desc = "Find Projects" },
+      -- File Tree
+      { "<leader>e", group = "Explorer" },
+      { "<leader>ee", "<cmd>NvimTreeToggle<cr>", desc = "Toggle File Explorer" },
+      { "<leader>ef", "<cmd>NvimTreeFindFileToggle<cr>", desc = "Toggle File Explorer on File" },
+      { "<leader>ec", "<cmd>NvimTreeCollapse<cr>", desc = "Collapse File Explorer" },
+      { "<leader>er", "<cmd>NvimTreeRefresh<cr>", desc = "Refresh File Explorer" },
+      -- Git
+      { "<leader>g", group = "Git" },
+      -- { "<leader>[h", }
+      { "<leader>gg", "<cmd>LazyGit<cr>", desc = "Lazy Git" },
+      { "<leader>gl", "<cmd>lua require 'gitsigns'.blame_line()<cr>", desc = "Git Blame" },
+      { "<leader>gL", "<cmd>lua require 'gitsigns'.blame_line({ full = true })<cr>", desc = "Git Blame Full" },
+      { "<leader>gs", "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", desc = "Stage Hunk" },
+      { "<leader>gr", "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", desc = "Reset Hunk" },
+      { "<leader>gs", ":lua require('gitsigns').stage_hunk({ vim.fn.line('.'), vim.fn.line('v') })<cr>", desc = "Stage Hunk", mode = "v" },
+      { "<leader>gr", ":lua require('gitsigns').reset_hunk({ vim.fn.line('.'), vim.fn.line('v') })<cr>", desc = "Reset Hunk", mode = "v" },
+      { "<leader>gS", "<cmd>lua require 'gitsigns'.stage_buffer()<cr>", desc = "Stage Buffer" },
+      { "<leader>gR", "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", desc = "Reset Buffer" },
+      { "<leader>gu", "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>", desc = "Undo Stage Hunk" },
+      { "<leader>gp", "<cmd>lua require 'gitsigns'.preview_hunk()<cr>", desc = "Preview Hunk" },
+      { "<leader>gd", "<cmd>lua require 'gitsigns'.diffthis()<cr>", desc = "Diff This" },
+      { "<leader>gD", "<cmd>lua require 'gitsigns'.diffthis('~')<cr>", desc = "Diff This ~" },
+      { "<leader>gj", "<cmd>lua require 'gitsigns'.next_hunk()<cr>", desc = "Next Hunk" },
+      { "<leader>gk", "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", desc = "Previous Hunk" },
     })
   end,
 }
