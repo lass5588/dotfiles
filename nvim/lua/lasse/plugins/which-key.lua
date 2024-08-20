@@ -62,6 +62,8 @@ return {
       { "<leader>gD", "<cmd>lua require 'gitsigns'.diffthis('~')<cr>", desc = "Diff This ~" },
       { "<leader>gj", "<cmd>lua require 'gitsigns'.next_hunk()<cr>", desc = "Next Hunk" },
       { "<leader>gk", "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", desc = "Previous Hunk" },
+      { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "Checkout Branch" },
+      { "<leader>gc", "<cmd>Telescope git_commits<cr>", desc = "Checkout Commit" },
     })
   end,
 }
