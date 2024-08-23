@@ -39,7 +39,7 @@ return {
       { "<leader>st", "<cmd>TodoTelescope<cr>", desc = "Find Todos" },
       { "<leader>sp", "<cmd>Telescope projects<cr>", desc = "Find Projects" },
       -- File Tree
-      { "<leader>e", group = "Explorer" },
+      { "<leader>e", group = "File Explorer" },
       { "<leader>ee", "<cmd>NvimTreeToggle<cr>", desc = "Toggle File Explorer" },
       { "<leader>ef", "<cmd>NvimTreeFindFileToggle<cr>", desc = "Toggle File Explorer on File" },
       { "<leader>ec", "<cmd>NvimTreeCollapse<cr>", desc = "Collapse File Explorer" },
