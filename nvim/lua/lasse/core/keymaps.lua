@@ -20,13 +20,6 @@ keymap("n", "<C-j>", "<C-w>j", opts, { desc = "Navigate split between split wind
 keymap("n", "<C-k>", "<C-w>k", opts, { desc = "Navigate split between split windows" })
 keymap("n", "<C-l>", "<C-w>l", opts, { desc = "Navigate split between split windows" })
 
--- Navigate tabs 
-keymap("n", "<leader>to", "<cmd>tabnew<cr>", { desc = "Open new tab" }) -- Open new tab
-keymap("n", "<leader>tx", "<cmd>tabclose<cr>", { desc = "Close current tab" }) -- Close current tab
-keymap("n", "<leader>tn", "<cmd>tabn<cr>", { desc = "Go to next tab" }) -- Go to next tab 
-keymap("n", "<leader>tp", "<cmd>tabp<cr>", { desc = "Go to previous tab" }) -- Go to previous tab
-keymap("n", "<leader>tf", "<cmd>tabnew %<cr>", { desc = "Open current buffer in new tab" }) -- Open current buffer in new tab
-
 -- Move text up and down -- Normal --
 keymap("n", "<A-j>", ":m .+1<cr>==", opts)
 keymap("n", "<A-k>", ":m .-2<cr>==", opts)

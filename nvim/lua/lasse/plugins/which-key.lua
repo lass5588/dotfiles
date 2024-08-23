@@ -1,12 +1,12 @@
 return {
   "folke/which-key.nvim",
   event = "VeryLazy",
-  
+
   init = function()
     vim.o.timeout = true
     vim.o.timeoutlen = 300
   end,
-  
+
   config = function()
     local wk = require("which-key")
 
@@ -46,7 +46,6 @@ return {
       { "<leader>er", "<cmd>NvimTreeRefresh<cr>", desc = "Refresh File Explorer" },
       -- Git
       { "<leader>g", group = "Git" },
-      -- { "<leader>[h", }
       { "<leader>gg", "<cmd>LazyGit<cr>", desc = "Lazy Git" },
       { "<leader>gl", "<cmd>lua require 'gitsigns'.blame_line()<cr>", desc = "Git Blame" },
       { "<leader>gL", "<cmd>lua require 'gitsigns'.blame_line({ full = true })<cr>", desc = "Git Blame Full" },
@@ -64,6 +63,20 @@ return {
       { "<leader>gk", "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", desc = "Previous Hunk" },
       { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "Checkout Branch" },
       { "<leader>gc", "<cmd>Telescope git_commits<cr>", desc = "Checkout Commit" },
+      -- Navigate tabs 
+      { "<leader>t", group = "Tabs" },
+      { "<leader>to", "<cmd>tabnew<cr>", desc = "Open new tab" },
+      { "<leader>tx", "<cmd>tabclose<cr>", desc = "Close current tab" },
+      { "<leader>tn", "<cmd>tabn<cr>", desc = "Go to next tab" },
+      { "<leader>tp", "<cmd>tabp<cr>", desc = "Go to previous tab" },
+      { "<leader>tf", "<cmd>tabnew %<cr>", desc = "Open current buffer in new tab" },
+      -- Triuble Diagnostics
+      { "<leader>x", group = "Trouble Diagnostics" },
+      { "<leader>xw", "<cmd>Trouble diagnostics toggle<CR>", desc = "Open trouble workspace diagnostics" },
+      { "<leader>xd", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", desc = "Open trouble document diagnostics" },
+      { "<leader>xq", "<cmd>Trouble quickfix toggle<CR>", desc = "Open trouble quickfix list" },
+      { "<leader>xl", "<cmd>Trouble loclist toggle<CR>", desc = "Open trouble location list" },
+      { "<leader>xt", "<cmd>Trouble todo toggle<CR>", desc = "Open todos in trouble" },
     })
   end,
 }
