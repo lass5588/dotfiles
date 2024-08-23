@@ -39,13 +39,5 @@ return {
 
     telescope.load_extension("fzf")
 
-    -- set keymaps
-    local keymap = vim.keymap.set -- for conciseness
-
-    -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", { desc = "Find files in cwd" })
-    -- keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
-    -- keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-    -- keymap("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
-    -- keymap("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
   end,
 }
