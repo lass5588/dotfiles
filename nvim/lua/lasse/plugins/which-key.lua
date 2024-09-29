@@ -26,6 +26,7 @@ return {
       { "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<cr>" , desc = "Comment Linewise" },
       { "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>" , desc = "Comment Linewise", mode = "v" },
       { "<leader>f", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+      { "<leader>l", "<cmd>Lazy<cr>", desc = "Open Lazy"},
       -- Buffer
       { "<leader>b", group = "Buffer" },
       { "<leader>bb", "<cmd>bp<cr>", desc = "Previous" },
