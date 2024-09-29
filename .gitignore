@@ -42,3 +42,5 @@ luac.out
 # Mac specific
 .DS_Store
 
+# Nvim lazy lock
+~/dotfiles/nvim/lazy-lock.json
