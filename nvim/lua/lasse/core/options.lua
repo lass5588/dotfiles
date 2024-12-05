@@ -14,7 +14,7 @@ opt.smartcase = true -- If mixed case is included, be sensitive
 
 opt.cursorline = true
 opt.backspace = "indent,eol,start" -- Allow backspace on indent, end of line and insert mode
-
+opt.scrolloff = 5 -- Keep x number of lines below and above the cursor, change to 999 to always be centred.
 -- Colors
 opt.termguicolors = true
 opt.background = "dark"  -- Prefers colorscheme with dark mode over light
