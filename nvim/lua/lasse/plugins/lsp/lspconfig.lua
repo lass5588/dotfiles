@@ -30,7 +30,7 @@ return {
 
         -- Set keybinds
         opts.desc = "Show LSP references"
-        keymap("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
+        keymap("n", "gr", "<cmd>Telescope lsp_references<CR>", opts)
 
         opts.desc = "Go to declaration"
         keymap("n", "gD", vim.lsp.buf.declaration, opts)
@@ -63,7 +63,7 @@ return {
         keymap("n", "K", vim.lsp.buf.hover, opts)
 
         opts.desc = "Restart LSP"
-        keymap("n", "gr", ":LspRestart<CR>", opts)
+        keymap("n", "gR", ":LspRestart<CR>", opts)
       end,
     })
 
@@ -79,15 +79,15 @@ return {
 
     -- Ensure that LSP servers are configured properly (example with a few LSP servers)
     mason_lspconfig.setup_handlers({
+        -- default handler for installed servers
       function(server_name)
         lspconfig[server_name].setup({
           capabilities = capabilities,
           on_attach = function(client, bufnr)
-            -- Additional per-client setup if needed
           end,
         })
       end,
     })
   end,
 }
-
+      

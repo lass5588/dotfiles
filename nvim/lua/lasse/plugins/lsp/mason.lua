@@ -48,10 +48,11 @@ return {
 				"isort", -- python formatter
 				"black", -- python formatter
 				"clang-format", -- C family formatter
-				-- Linters
-				--"sonarlint-language-server",
+				
+        -- Linters
+				"sonarlint-language-server",
 				"cpplint",
-				-- "pylint",
+				"pylint",
 				"flake8",
 				"eslint_d",
 			},
