@@ -43,6 +43,22 @@ return {
       },
     }
 
+    local clients_lsp = function ()
+      local bufnr = vim.api.nvim_get_current_buf()
+
+      -- Use the correct filter table to get clients for the current buffer
+      local clients = vim.lsp.get_clients({ bufnr = bufnr })
+      if not clients or vim.tbl_isempty(clients) then
+        return ''
+      end
+
+      local c = {}
+      for _, client in pairs(clients) do
+        table.insert(c, client.name)
+      end
+      return '\u{f085} ' .. table.concat(c, '|')
+    end
+
     -- configure lualine with modified theme
     lualine.setup({
       options = {
@@ -57,7 +73,13 @@ return {
             color = { fg = "#ff9e64" },
           },
           { "encoding" },
-          { "fileformat" },
+          {
+            "fileformat",
+            symbols = {
+              unix = '',
+            }
+          },
+          { clients_lsp },
           { "filetype" },
         },
       },
