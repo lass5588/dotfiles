@@ -31,6 +31,8 @@ return {
       { "<leader>b", group = "Buffer" },
       { "<leader>bb", "<cmd>bp<cr>", desc = "Previous" },
       { "<leader>bn", "<cmd>bn<cr>", desc = "Next" },
+      { "<leader>bd", "<cmd>bd<cr>", desc = "Close current" },
+      { "<leader>bo", "<cmd>BufferLineCloseOthers<cr>", desc = "Close current" },
       -- Search 
       { "<leader>s", group = "Search" },
       { "<leader>sf", "<cmd>Telescope find_files<cr>", desc = "Find files" },
