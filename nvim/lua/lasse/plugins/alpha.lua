@@ -24,7 +24,6 @@ return {
       dashboard.button("s", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
       dashboard.button("p", "  > Recent Files", "<cmd>Telescope projects<CR>"),
       dashboard.button("e", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-      dashboard.button("r", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
       dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
     }
 
