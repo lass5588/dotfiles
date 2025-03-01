@@ -113,5 +113,8 @@ alias n='nvim'
 alias zshconfig='vim ~/dotfiles/.zshrc'
 alias zshsource='source ~/dotfiles/.zshrc'
 
+# Postgres alias
+alias psql='/Applications/Postgres.app/Contents/Versions/15/bin/psql'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
