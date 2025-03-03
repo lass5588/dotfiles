@@ -98,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [ -f "/Users/lasseandersen/.ghcup/env" ] && source "/Users/lasseandersen/.ghcup/env" # ghcup-env
 
-# git alias
+# Git alias
 alias ga='git add . && git commit -m'
 alias gits='git status'
 alias gd='git diff'
