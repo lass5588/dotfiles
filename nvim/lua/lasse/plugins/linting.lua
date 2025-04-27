@@ -11,6 +11,7 @@ return {
 			typescriptreact = { "eslint_d" },
 			svelte = { "eslint_d" },
 			python = { "pylint" },
+      java = { "checkstyle" },
 			-- python = { "flake8" },
 			-- c = { "sonarlint-language-server" },
 			-- cpp = { "sonarlint-language-server" },

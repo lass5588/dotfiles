@@ -27,7 +27,7 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
-				"tsserver",
+				"eslint",
 				"html",
 				"cssls",
 				"bashls",
@@ -37,7 +37,7 @@ return {
 				"pyright",
 				"clangd",
 				"sqlls",
-				"hls",
+        "jdtls",
 			},
 		})
 

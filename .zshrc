@@ -124,3 +124,14 @@ alias psql='/Applications/Postgres.app/Contents/Versions/15/bin/psql'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Bat plugin theme, also used for git delta
+export BAT_THEME=tokyonight_night
+
+# Highligt commands to be a lighter green
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#00ff00'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#00ff00'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=#00ff00'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
