@@ -23,6 +23,7 @@ return {
       -- ensure these language parsers are installed
       ensure_installed = {
         "json",
+        "java",
         "javascript",
         "typescript",
         "angular",
@@ -43,7 +44,6 @@ return {
         "python",
         "sql",
         "haskell",
-        "java",
       },
       incremental_selection = {
         enable = true,

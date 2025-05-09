@@ -29,6 +29,8 @@ export PATH="$HOME/.local/bin":$PATH
 export CC=/usr/local/opt/llvm/bin/clang
 export CXX=/usr/local/opt/llvm/bin/clang++
 
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
 # Set language
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
@@ -118,7 +120,7 @@ alias zshsource='source ~/dotfiles/.zshrc'
 alias pip=pip3
 
 # Postgres alias
-alias psql='/Applications/Postgres.app/Contents/Versions/15/bin/psql'
+alias psql='/Applications/Postgres.app/Contents/Versions/latest/bin/psql'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
